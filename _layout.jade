@@ -1,0 +1,11 @@
+doctype
+html
+  head
+    title!= site_name
+    link(rel="stylesheet", href="css/styles.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display")
+    link(rel="shortcut icon", type="image/x-icon", href="favicon.ico")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+  body
+    .content-container
+      != yield
