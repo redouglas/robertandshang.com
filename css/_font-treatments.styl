@@ -1,0 +1,32 @@
+.section-header
+  font-size: 45px
+  margin-bottom: 40px
+  font-weight: normal
+  position: relative
+
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    width: 110px
+    border-bottom 2px solid $black
+    bottom: -10px
+
+
+h3
+  font-family: 'Lato' !important
+  font-size: 12px
+  text-transform: uppercase
+  font-weight: 900
+  letter-spacing: 2px
+
+
+a
+  color: $black
+  font-style: italic
+
+  &:hover
+    color: lighten($black, 10)
+
+  &:visited, &:active
+    color: $black

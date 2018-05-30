@@ -1,2 +1,42 @@
-h1 Robert and Shang
-p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+doctype
+html
+  head
+    title Shang &amp; Robert
+    link(rel="stylesheet", href="css/styles.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:300,900|Playfair+Display")
+    link(rel="shortcut icon", type="image/x-icon", href="favicon.ico")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    script(type="text/javascript", src="js/jquery-2.0.3.min.js")
+  body
+    .header
+      .logo
+      .rsvp
+        | Please RSVP By June 20, 2018
+        button.white RSVP
+      .registry
+        button.white Registry
+
+    .left-side
+      .timeleft
+        span.days#days
+        span.text#daystext
+
+    section.home
+      .content-container
+        .content
+          include _home.jade
+        .background-element
+      .section-background
+
+    section.accomodations
+      include _accomodations
+
+    section.location
+      include _location
+
+    section.rsvp
+      include _rsvp
+
+
+
+

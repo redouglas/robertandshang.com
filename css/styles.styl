@@ -1,20 +1,95 @@
 @require _variables
+@require _buttons
+@require _font-treatments
 
 body
+  position: absolute
+  overflow-y: auto
+  overflow-x: hidden
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
   color: $black
   background-color: $white
   font-family: 'Lato', sans-serif
   letter-spacing: 0.5px
   font-size: 14px
-  
+  min-width: 968px
+
 h1, h2, h3, h4
   font-family: 'Playfair Display', serif
-  
-.content-container
-	position: absolute
-	top: 100px
-	left: 80px
-	right: 80px
-	bottom: 100px
-	background: #fff
-	box-shadow: 0 2px 15px 0px rgba(0,0,0,0.1)
+  margin-top: 0
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 9
+  height: 60px
+
+  .logo
+    position: absolute
+    top: 10px
+    left: 20px
+    background-image: url('/img/logo.svg')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 70px
+    height: 40px
+
+  .rsvp, .registry
+    position: absolute
+    top: 20px
+    right: 20px
+    text-transform: uppercase
+    letter-spacing: 2px
+    font-size: 10px
+    font-weight: bold
+
+    button
+      margin-left: 20px
+
+  .rsvp
+    right: 120px
+
+.left-side
+  position: absolute
+  left: -85px
+  top: 50%
+  margin-top: -20px
+  transform: rotate(-90deg)
+  text-transform: uppercase
+  font-size: 10px
+  letter-spacing: 2px
+
+  .days
+    font-weight: bold
+
+section
+  width: 100%
+  height: 100%
+  display: inline-block
+  padding: 70px 110px
+  position: relative
+  box-sizing: border-box
+  min-height: 400px
+
+.grid
+  display: flex
+  justify-content: space-between
+
+.col-3
+  width: 30%
+
+.col-2
+  width: 48%
+
+
+
+@require '_home'
+@require '_location'
+@require '_rsvp'
+// @require '_accomodations'
