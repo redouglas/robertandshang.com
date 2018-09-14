@@ -32,13 +32,13 @@ h1, h2, h3, h4
   .logo
     position: absolute
     top: 10px
-    left: 20px
+    left: 35px
     background-image: url('/img/logo.svg')
     background-size: contain
     background-repeat: no-repeat
     background-position: center
-    width: 70px
-    height: 40px
+    width: 60px
+    height: 60px
 
   .rsvp, .registry
     position: absolute
@@ -87,9 +87,27 @@ section
 .col-2
   width: 48%
 
+.col-3x2
+  width: 60%
+
+.seperator
+  display: block
+  text-align: left
+  margin: 20px 0 60px 0
+  line-height: 0
+
+  &:after
+    content: ''
+    width: 20%
+    height: 2px
+    background-color: $black
+    display: inline-block
+
+
 
 
 @require '_home'
 @require '_location'
 @require '_rsvp'
 // @require '_accomodations'
+@require '_image-sections'

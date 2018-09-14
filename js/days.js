@@ -5,10 +5,12 @@ var daysLeft = function() {
     return Math.round(Math.abs((today.getTime() - weddingDate.getTime())/(oneDay)));
 };
 
-var holder = document.getElementById('days');
-var textHolder = document.getElementById('daystext');
+$(function() {
+  var holder = document.getElementById('days');
+  var textHolder = document.getElementById('daystext');
 
-if (holder && textHolder) {
-  holder.innerText = daysLeft();
-  textHolder.innerText = ' days until the wedding';
-}
+  if (holder && textHolder) {
+    holder.innerText = daysLeft();
+    textHolder.innerText = ' days until the wedding';
+  }
+});
