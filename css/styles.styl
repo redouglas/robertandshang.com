@@ -77,6 +77,13 @@ section
   box-sizing: border-box
   min-height: 400px
 
+  &.dark
+    background-color: $black
+    color: $white
+
+    .section-header:after
+      border-bottom 2px solid $white
+
 .grid
   display: flex
   justify-content: space-between
@@ -109,5 +116,6 @@ section
 @require '_home'
 @require '_location'
 @require '_rsvp'
-// @require '_accomodations'
+@require '_accomodations'
+@require '_faq'
 @require '_image-sections'
