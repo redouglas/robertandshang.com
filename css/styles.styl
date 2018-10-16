@@ -49,8 +49,8 @@ h1, h2, h3, h4
     font-size: 10px
     font-weight: bold
 
-    button
-      margin-left: 20px
+    a.rsvp-button
+      margin-left: 10px
 
   .rsvp
     right: 120px
@@ -70,12 +70,14 @@ h1, h2, h3, h4
 
 section
   width: 100%
-  height: 100%
   display: inline-block
   padding: 70px 110px
   position: relative
   box-sizing: border-box
   min-height: 400px
+
+  &.fullscreen
+    height: 100%
 
   &.dark
     background-color: $black
@@ -83,6 +85,9 @@ section
 
     .section-header:after
       border-bottom 2px solid $white
+
+  &.gray
+    background-color: WhiteSmoke
 
 .grid
   display: flex
@@ -109,8 +114,6 @@ section
     height: 2px
     background-color: $black
     display: inline-block
-
-
 
 
 @require '_home'

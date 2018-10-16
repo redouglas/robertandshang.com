@@ -12,6 +12,12 @@
     border-bottom 2px solid $black
     bottom: -10px
 
+  &.right
+    text-align: right
+
+    &:after
+      right: 0
+
 
 h3
   font-family: 'Lato' !important
@@ -31,7 +37,18 @@ a
   &:visited, &:active
     color: $black
 
+section.dark a
+  color: darken($white, 10)
+
+  &:hover
+    color: $white
+
+  &:visited, &:active
+    color: darken($white, 10)
+
 .question
   font-family: 'Playfair Display', serif
   font-size: 1.2em
 
+.answer
+  line-height: 1.5
