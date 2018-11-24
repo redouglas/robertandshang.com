@@ -15,7 +15,6 @@ body
   font-family: 'Lato', sans-serif
   letter-spacing: 0.5px
   font-size: 14px
-  min-width: 968px
 
 h1, h2, h3, h4
   font-family: 'Playfair Display', serif
@@ -27,22 +26,23 @@ h1, h2, h3, h4
   left: 0
   right: 0
   z-index: 9
-  height: 60px
+  height: 49px
+  background: $white
 
   .logo
     position: absolute
-    top: 10px
+    top: 0px
     left: 35px
     background-image: url('/img/logo.svg')
     background-size: contain
     background-repeat: no-repeat
     background-position: center
-    width: 60px
-    height: 60px
+    width: 30px
+    height: 50px
 
   .rsvp, .registry
     position: absolute
-    top: 20px
+    top: 10px
     right: 20px
     text-transform: uppercase
     letter-spacing: 2px
@@ -122,3 +122,4 @@ section
 @require '_accomodations'
 @require '_faq'
 @require '_image-sections'
+@require  '_responsive'
