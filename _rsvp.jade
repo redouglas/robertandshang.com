@@ -1,6 +1,7 @@
 h2.section-header RSVP
 a(name="rsvp")
 form#rsvpForm
+  p Reminder: Because of limitations from the venue and to create a more relaxed atmosphere for our guests, only kids from close family will be present. Thank you for understanding. If you have any questions or trouble RSVPing, please contact us directly.
   .grid
     .col-2
       .field
@@ -25,7 +26,7 @@ form#rsvpForm
         input(type='text', name='guest_name')
       .field
         label Song Requests
-        textarea(name='song_reqs')
+        textarea(name='song_reqs', placeholder="Enter as many songs as you want. If you think of any more after you have RSVPed, just send us an email")
   button.black(type='submit') Submit
 .rsvp-success
   h3 Thank you
