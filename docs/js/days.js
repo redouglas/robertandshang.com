@@ -10,7 +10,9 @@ $(function() {
   var textHolder = document.getElementById('daystext');
 
   if (holder && textHolder) {
-    holder.innerText = daysLeft();
-    textHolder.innerText = ' days until the wedding';
+    if (days > 0) {
+      holder.innerText = daysLeft();
+      textHolder.innerText = ' days until the wedding';
+    }
   }
 });
