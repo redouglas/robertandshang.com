@@ -10,8 +10,9 @@ $(function() {
   var textHolder = document.getElementById('daystext');
 
   if (holder && textHolder) {
-    if (days > 0) {
-      holder.innerText = daysLeft();
+    var daysRemaining = daysLeft();
+    if (daysRemaining > 0) {
+      holder.innerText = daysRemaining;
       textHolder.innerText = ' days until the wedding';
     }
   }
