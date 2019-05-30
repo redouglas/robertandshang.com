@@ -2,7 +2,8 @@ var daysLeft = function() {
     var oneDay = 24*60*60*1000;
     var weddingDate = new Date('Sat May 25 2019 18:00:00 GMT-0700 (PDT)');
     var today = new Date();
-    return Math.round(Math.abs((today.getTime() - weddingDate.getTime())/(oneDay)));
+    var daysLeft = Math.round(weddingDate.getTime()/oneDay - today.getTime()/oneDay);
+    return daysLeft;
 };
 
 $(function() {
