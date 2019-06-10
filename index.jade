@@ -15,53 +15,12 @@ html
     meta(name='theme-color', content='#ffffff')
     meta(name="viewport", content="width=device-width, initial-scale=1")
     script(type="text/javascript", src="js/jquery-2.0.3.min.js")
-  body
-    .header
-      .logo
-      .rsvp
-        span.hidden-mobile Please RSVP By April 21, 2019
-        a.button.white.rsvp-button(href="#rsvp") RSVP
-      .registry
-        a(href="https://www.blueprintregistry.com/registry/shang-and-robert", target="_blank").button.white Registry
-
-    .left-side.hidden-mobile
-      .timeleft
-        span.days#days
-        span.text#daystext
-
-    section.home.fullscreen
-      .content-container
-        .content
-          include _home.jade
-        .background-element
-      .section-background
-
-    section.story
-      include _story
-
-    section.location
-      include _location
-
-    section.images.three-square
-      .image.one
-        .caption.light Japan, 2015
-      .image.two
-        .caption.dark Cabo, 2016
-      .image.three
-        .caption.light Tromsø, 2018
-
-    section.faq
-      include _faq
-
-    section.accomodations
-      include _accomodations
-
-
-    section.outoftown
-      include _outoftown
-
-    section.rsvp
-      include _rsvp
+  body.after
+    .aftercontent
+      h1 THANK YOU
+      h2 for celebrating with us
+      p MAY 25, 2019
+    
 
 
 
